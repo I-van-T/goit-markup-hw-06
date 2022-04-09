@@ -34,8 +34,7 @@ body {
   color: var(--text-color);
 }
 
-img,
-svg {
+img {
   display: block;
   max-width: 100%;
   height: auto;
@@ -742,6 +741,8 @@ svg {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--back-color);
+  display: block;
+  margin-bottom: 20px;
 }
 
 .connect-list {
@@ -821,6 +822,6 @@ svg {
 }
 
 .modal-icon {
-  width: 15px;
-  height: 15px;
+  width: 11px;
+  height: 11px;
 }
