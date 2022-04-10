@@ -676,6 +676,10 @@ textarea {
   display: flex;
 }
 
+.footer-div {
+  flex-grow: 1;
+}
+
 .footer-link {
   font-family: var(--secondary-font);
   font-weight: 700;
