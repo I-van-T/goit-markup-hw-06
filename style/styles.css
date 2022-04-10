@@ -830,3 +830,48 @@ textarea {
   width: 11px;
   height: 11px;
 }
+
+/* Форма */
+
+.form {
+  outline: 2px solid tomato;
+  padding: 20px;
+}
+
+.form-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--text-header);
+}
+
+.form-filed {
+  outline: 1px solid navy;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.form-filed input {
+  margin: 0;
+  padding: 0;
+}
+
+.form-filed input::placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.form-subtitle {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.16;
+
+  letter-spacing: 0.01em;
+}
