@@ -462,27 +462,30 @@
         <!-- Форма -->
         <form class="form">
           <h2 class="form-title">Оставьте свои данные, мы вам перезвоним</h2>
-          <div class="form-filed">
-            <label for="name" class="form-subtitle">Имя</label>
-            <input type="text" name="name" id="name" />
+          <div class="form-field">
+            <label for="name" class="form-label">Имя</label>
+            <input class="form-input" type="text" name="name" id="name" />
           </div>
-          <div class="form-filed">
-            <label for="tel" class="form-subtitle">Телефон</label>
-            <input type="tel" name="tel" id="tel" />
+          <div class="form-field">
+            <label for="tel" class="form-label">Телефон</label>
+            <input class="form-input" type="tel" name="tel" id="tel" />
           </div>
-          <div class="form-filed">
-            <label for="email" class="form-subtitle">Почта</label>
-            <input type="email" name="email" id="email" />
+          <div class="form-field">
+            <label for="email" class="form-label">Почта</label>
+            <input class="form-input" type="email" name="email" id="email" />
           </div>
-          <div class="form-filed">
-            <label for="textarea" class="form-subtitle">Комментарий</label>
+          <div class="form-field">
+            <label for="textarea" class="form-label">Комментарий</label>
             <textarea name="comment" id="comment" rows="5" placeholder="Введите текст"></textarea>
           </div>
-          <div class="form-filed">
+          <div class="form-field">
             <input type="checkbox" name="policy" id="policy" />
-            <label for="policy">Соглашаюсь с рассылкой и принимаю <a>Условия договора</a></label>
+            <label for="policy"
+              >Соглашаюсь с рассылкой и принимаю
+              <a class="link" href="#">Условия договора</a></label
+            >
           </div>
-          <button type="submit">Отправить</button>
+          <button class="hero-btn btn" type="submit">Отправить</button>
         </form>
       </div>
     </div>
