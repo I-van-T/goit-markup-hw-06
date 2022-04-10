@@ -868,7 +868,7 @@ textarea {
   background-color: var(--back-color);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   border-radius: 4px;
-  padding: 20px;
+  padding: 40px;
 }
 
 .modal-btn {
@@ -898,13 +898,6 @@ textarea {
 
 /* Форма */
 
-.form {
-  /* outline: 2px solid tomato; */
-  margin-left: auto;
-  margin-right: auto;
-  padding: 20px;
-}
-
 .form-title {
   font-weight: 700;
   font-size: 20px;
@@ -920,6 +913,7 @@ textarea {
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
+  position: relative;
 }
 
 .form-field input {
@@ -928,21 +922,13 @@ textarea {
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
+  padding-left: 35px;
+  transition: border var(--animation)
 }
 
-.form-field textarea {
-  margin: 0;
-  padding: 12px 16px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  box-sizing: border-box;
-  border-radius: 4px;
-}
-
-.form-field textarea::placeholder {
-  font-size: 12px;
-  line-height: 1.16;
-  letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
+.form-field input:hover,
+.form-field input:focus {
+  border: 1px solid var(--active-color)
 }
 
 .form-field label {
@@ -955,6 +941,42 @@ textarea {
   line-height: 1.16;
   letter-spacing: 0.01em;
   color: var(--text-color);
+}
+
+.form-icon {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%)
+  transition: var(--animation);
+}
+
+.form-input:hover ~ .form-icon,
+.form-input:focus ~ .form-icon {
+  fill: var(--active-color);
+}
+
+.form-field textarea {
+  margin: 0;
+  padding: 12px 16px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  transition: border var(--animation);
+}
+
+.form-field textarea::placeholder {
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.form-field textarea:hover,
+.form-field textarea:focus {
+  border: 1px solid var(--active-color)
 }
 
 .form-link {
